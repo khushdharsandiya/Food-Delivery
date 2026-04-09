@@ -1,4 +1,4 @@
-# React + Vite
+<!-- # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 Admin Panel: https://food-delivery-admin-gamma-five.vercel.app/login
@@ -13,4 +13,47 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 ## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project. -->
+# 🍔 Food Delivery App (Frontend)
+
+This project is built using React + Vite.
+
+---
+
+## 🚀 Live Links
+
+* 🌐 Frontend: https://food-delivery-eta-mauve.vercel.app/
+* 🛠️ Admin Panel: https://food-delivery-admin-gamma-five.vercel.app/login
+
+---
+
+## ⚙️ Tech Stack
+
+* React
+* Vite
+* JavaScript
+
+---
+
+## 📦 Features
+
+* User-friendly UI
+* Fast performance with Vite
+* Food ordering interface
+
+---
+
+## 🛠️ Development Info
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+* @vitejs/plugin-react (Babel based)
+* @vitejs/plugin-react-swc (SWC based)
+
+---
+
+## 📘 Notes
+
+The React Compiler is not enabled by default due to performance considerations.
