@@ -3,7 +3,7 @@ import { cancelUserOrder, confirmPayment, createOrder, deleteAnyOrder, getAllOrd
 import authMiddleware from '../middleware/auth.js';
 import adminAuthMiddleware from '../middleware/adminAuth.js';
 
-const orderRoute = express.Router();
+const OrderRoute = express.Router();
 
 orderRoute.get('/getall', adminAuthMiddleware, getAllOrders)
 orderRoute.put('/getall/:id', adminAuthMiddleware, updateAnyOrder)
@@ -20,4 +20,4 @@ orderRoute.get('/confirm', confirmPayment)
 orderRoute.get('/:id', getOrderById)
 orderRoute.put('/:id', UpdateOrder)
 
-export default orderRoute;
+export default OrderRoute;
