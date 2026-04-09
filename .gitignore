@@ -1,7 +1,27 @@
-﻿# dependencies਍渀漀搀攀开洀漀搀甀氀攀猀⼀ഀ
-਍⌀ 攀渀瘀 昀椀氀攀猀 ⠀嘀䔀刀夀 䤀䴀倀伀刀吀䄀一吀⤀ഀ
-.env਍⸀攀渀瘀⸀⨀ഀ
-Backend/.env਍ഀ
-# build files਍搀椀猀琀⼀ഀ
-build/਍ഀ
-# logs਍⨀⸀氀漀最ഀ
+﻿# node modules
+node_modules/
+
+# env files
+.env
+.env.local
+.env.development
+.env.production
+
+# logs
+logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# build folders
+dist/
+build/
+
+# cache
+.cache/
+.next/
+
+# misc
+coverage/
