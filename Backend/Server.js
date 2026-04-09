@@ -9,7 +9,7 @@ import userRouter from './routes/userRoute.js';
 import authRouter from './routes/authRoute.js';
 import itemRouter from './routes/itemRoute.js';
 import cartRouter from './routes/cartRoute.js';
-import OrderRoute from './routes/OrderRoute.js';
+import orderRoute from './routes/orderRoute.js';
 import feedbackRouter from './routes/feedbackRoute.js';
 import siteStatRouter from './routes/siteStatRoute.js';
 import adminRoute from './routes/adminRoute.js';
@@ -41,7 +41,7 @@ app.use('/api/auth', authRouter);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use('/api/items', itemRouter);
 app.use('/api/cart', cartRouter);
-app.use('/api/orders',OrderRoute)
+app.use('/api/orders', orderRoute)
 app.use('/api/feedback', feedbackRouter);
 app.use('/api/stats', siteStatRouter);
 app.use('/api/admin', adminRoute);

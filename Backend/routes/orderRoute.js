@@ -5,19 +5,19 @@ import adminAuthMiddleware from '../middleware/adminAuth.js';
 
 const OrderRoute = express.Router();
 
-orderRoute.get('/getall', adminAuthMiddleware, getAllOrders)
-orderRoute.put('/getall/:id', adminAuthMiddleware, updateAnyOrder)
-orderRoute.delete('/getall/:id', adminAuthMiddleware, deleteAnyOrder)
+OrderRoute.get('/getall', adminAuthMiddleware, getAllOrders)
+OrderRoute.put('/getall/:id', adminAuthMiddleware, updateAnyOrder)
+OrderRoute.delete('/getall/:id', adminAuthMiddleware, deleteAnyOrder)
 //PROTECT REST OF ROUTES USINING MIDDLEWARE
-orderRoute.use(authMiddleware)
+OrderRoute.use(authMiddleware)
 
-orderRoute.post('/', createOrder)
-orderRoute.post('/reorder/:orderId', reorderFromOrder)
-orderRoute.post('/razorpay-verify', verifyRazorpayPayment)
-orderRoute.post('/:id/cancel', cancelUserOrder)
-orderRoute.get('/', getOrders)
-orderRoute.get('/confirm', confirmPayment)
-orderRoute.get('/:id', getOrderById)
-orderRoute.put('/:id', UpdateOrder)
+OrderRoute.post('/', createOrder)
+OrderRoute.post('/reorder/:orderId', reorderFromOrder)
+OrderRoute.post('/razorpay-verify', verifyRazorpayPayment)
+OrderRoute.post('/:id/cancel', cancelUserOrder)
+OrderRoute.get('/', getOrders)
+OrderRoute.get('/confirm', confirmPayment)
+OrderRoute.get('/:id', getOrderById)
+OrderRoute.put('/:id', UpdateOrder)
 
 export default OrderRoute;
