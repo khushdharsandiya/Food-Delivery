@@ -55,8 +55,8 @@ const retentionCleanupEveryMs = 30 * 60 * 1000; // 30 minutes
 setInterval(async () => {
     try {
         const info = await cleanupOldOrdersRetention();
-        if (info.enabled && info.deletedCount > 0) {
-            console.log(
+        if (info.enabled && info.deletedCount > 0)  {
+            console.log( 
                 `[Retention] Deleted ${info.deletedCount} delivered order(s) older than ${info.retentionHours}h`,
             );
         }
