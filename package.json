@@ -1,0 +1,10 @@
+{
+  "name": "foodie-frenzy",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node Backend/Server.js",
+    "postinstall": "npm --prefix Backend install"
+  }
+}
+
